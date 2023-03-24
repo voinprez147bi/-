@@ -1,0 +1,31 @@
+import random
+import time
+hp = 100
+speed = 0
+distance = 0
+totalDistance = 8849
+rock = 1
+yeti = 2
+neighbour = 3
+
+while True:
+    if hp <= 0:
+        print("ты чё еба%ут&й")
+        break
+    if distance >= totalDistance:
+        print("ты кто такой чтобы это сделать с№ка")
+        break
+    speed = speed + 1
+    print("Скоррсть:", speed)
+    distance = distance + speed
+    print("нет ты в натуре еб*нут%й")
+    chance = random.randint(0,50)
+    if (chance == rock):
+        hp = hp - 3
+        print("будь внимателен дэбил")
+    elif (chance == yeti):
+        hp = hp - 37
+        print("шиза")
+    elif (chance == neighbour):
+        hp = hp - 17
+        print("сосед молодец")
