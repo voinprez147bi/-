@@ -1,0 +1,12 @@
+import random
+import time
+def GenPass():
+    password = ''
+    for x in range(16):
+        password += random.choice('abcdefghivcjyftduyguAESRHJHKJIITFFGJJ')
+    return password
+print(GenPass()+'_'+'gfAWq')
+
+for i in range(10,0,-1):
+    print('осталось', i, 'секунд')
+    time.sleep(1)
